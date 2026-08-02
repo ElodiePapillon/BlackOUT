@@ -4,9 +4,44 @@ Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
 
-## 2026-08-02 — Automatisation du journal, plafond de 50 noeuds, strategie ressources
+## 2026-08-02 — Automatisation du journal, plafond de 50 nœuds, stratégie ressources
 
-Le workflow .github/workflows/journal.yml automatise desormais la tenue du journal : bouton Run workflow pour ajouter une entree datee en tete de fichier, et verification hebdomadaire qui ouvre un ticket si le journal depasse sept jours sans mise a jour. La cadence de quinze minutes initialement demandee a ete ecartee : GitHub n'execute les taches planifiees qu'au mieux, le quota d'Actions du depot prive serait consomme pour rien, et le resultat serait des milliers de commits vides. Decision de plafonner le reseau a 50 noeuds, soit environ 20 % de marge sous le point de saturation situe vers 60 noeuds. Nouveau document strategie-ressources.md : repartition des 50 noeuds par fonction, format de bulletin tenant dans un seul paquet de 237 octets, codes EAU ALIM MED ENER ABRI INFO, etats OK BAS VIDE FERME HS, cadence de deux heures pour un cout inferieur a 1 % du canal. README mis a jour. Cette entree a ete redigee par le workflow lui-meme, a titre de test.
+### Automatisation de la tenue du journal
+
+Le workflow `.github/workflows/journal.yml` prend désormais en charge la tenue du journal. Deux usages : le bouton « Run workflow » ajoute une entrée datée en tête de fichier à partir d'un titre et d'un contenu saisis, et une vérification hebdomadaire ouvre un ticket de rappel si le journal n'a pas bougé depuis sept jours. Le premier essai a réussi en douze secondes, et c'est lui qui a produit la première version de la présente entrée.
+
+La cadence de quinze minutes initialement demandée a été écartée, pour trois raisons inscrites en commentaire dans le fichier lui-même. GitHub n'exécute les tâches planifiées qu'au mieux, avec des retards fréquents et parfois des exécutions sautées. Chaque exécution consomme le quota d'Actions du dépôt privé, soit près de 2 900 exécutions par mois pour un intervalle de quinze minutes. Et le résultat serait un historique de milliers de commits vides, sans aucune valeur documentaire. Le rappel est donc hebdomadaire et les entrées réelles sont ajoutées à la demande.
+
+### Décisions prises
+
+| Décision | Contenu |
+|---|---|
+| Plafond du réseau | 50 nœuds, ferme, soit environ 20 % de marge sous le point de saturation |
+| Finalité première | diffuser où sont les ressources, en quelle quantité, et depuis quand l'information date |
+| Unité desservie | des points et non des foyers : eau, alimentation, santé, énergie, regroupement de quartier |
+| Diffusion vers la population | affichage tenu aux points de regroupement, alimenté par le tableau de bord de la passerelle |
+| Canaux | un seul canal utile ; un second canal ne crée aucune capacité supplémentaire |
+| Cadence des bulletins | immédiate à tout changement d'état, sinon toutes les deux heures |
+
+### Correction apportée aux notes précédentes
+
+| Sujet | Correction |
+|---|---|
+| Cible de déploiement | 50 nœuds, et non 100 à 200 comme écrit à l'entrée précédente. Le chiffre de 100 à 200 supposait des réglages disciplinés jamais vérifiés sur le terrain ; celui de 50 tient avec les intervalles par défaut, ce qui est la seule hypothèse prudente. |
+
+### Travaux menés
+
+Création de `strategie-ressources.md` : justification du plafond, répartition des 50 nœuds par fonction, format de bulletin tenant dans un seul paquet de 237 octets, codes ressource et états, calcul du coût en temps d'antenne, règles d'exploitation et limites assumées.
+
+Mise à jour du README : ajout du document à l'index, énoncé de la finalité opérationnelle dès l'introduction, réécriture de la limite de capacité en section 8, cinq lignes ajoutées à la feuille de route.
+
+### Résultat marquant de la session
+
+Le plafond de 50 nœuds n'est pas une contrainte technique mais une règle d'exploitation, et c'est là sa fragilité : rien dans Meshtastic n'empêche un cinquante-et-unième nœud de rejoindre le canal. Tenir le chiffre suppose une personne identifiée qui attribue les nœuds. C'est un problème d'organisation, pas de radio.
+
+### À faire à la prochaine session
+
+Constituer le registre des points de ressource, qui conditionne tout usage réel du format de bulletin. Écrire et essayer la procédure de bascule vers le second nœud du poste de commandement. Trancher la rotation des clés de canal. Reprendre les tâches déjà listées : prix réels des cartes chez un revendeur européen, protocole de test de portée, repérage des points hauts, recherche d'un maillage déjà actif dans le département.
 
 ## 2026-08-02 — Session de reprise
 
