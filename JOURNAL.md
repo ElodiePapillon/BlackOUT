@@ -4,6 +4,10 @@ Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
 
+## 2026-08-02 — Automatisation du journal, plafond de 50 noeuds, strategie ressources
+
+Le workflow .github/workflows/journal.yml automatise desormais la tenue du journal : bouton Run workflow pour ajouter une entree datee en tete de fichier, et verification hebdomadaire qui ouvre un ticket si le journal depasse sept jours sans mise a jour. La cadence de quinze minutes initialement demandee a ete ecartee : GitHub n'execute les taches planifiees qu'au mieux, le quota d'Actions du depot prive serait consomme pour rien, et le resultat serait des milliers de commits vides. Decision de plafonner le reseau a 50 noeuds, soit environ 20 % de marge sous le point de saturation situe vers 60 noeuds. Nouveau document strategie-ressources.md : repartition des 50 noeuds par fonction, format de bulletin tenant dans un seul paquet de 237 octets, codes EAU ALIM MED ENER ABRI INFO, etats OK BAS VIDE FERME HS, cadence de deux heures pour un cout inferieur a 1 % du canal. README mis a jour. Cette entree a ete redigee par le workflow lui-meme, a titre de test.
+
 ## 2026-08-02 — Session de reprise
 
 ### État des lieux à l'ouverture
