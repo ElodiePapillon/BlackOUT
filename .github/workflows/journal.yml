@@ -1,0 +1,123 @@
+name: Journal de bord
+
+# Deux usages.
+#
+# 1. Bouton "Run workflow" : ajoute une entree datee en tete de JOURNAL.md,
+#    avec le titre et le contenu saisis, puis valide et pousse le commit.
+# 2. Une fois par semaine : verifie la fraicheur du journal et ouvre un ticket
+#    de rappel si aucune entree n'a ete ajoutee depuis sept jours.
+#
+# Note de cadence. Une planification toutes les quinze minutes a ete ecartee :
+# GitHub n'execute les taches planifiees qu'au mieux, avec des retards frequents,
+# chaque execution consomme le quota d'Actions du depot prive, et le resultat
+# serait des milliers de commits vides sans aucune valeur documentaire. Le rappel
+# est donc hebdomadaire et les entrees reelles sont ajoutees a la demande.
+
+on:
+  workflow_dispatch:
+    inputs:
+      titre:
+        description: "Titre de l'entree, par exemple : commande du palier 0"
+        required: true
+        type: string
+      contenu:
+        description: "Contenu de l'entree en Markdown. Laisser vide pour obtenir un canevas."
+        required: false
+        type: string
+  schedule:
+    - cron: '0 7 * * 1'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ajouter-entree:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+
+      - name: Inserer l'entree en tete du journal
+        env:
+          TITRE: ${{ inputs.titre }}
+          CONTENU: ${{ inputs.contenu }}
+        run: |
+          python3 <<'PY'
+          import os, re, datetime, pathlib
+
+          chemin = pathlib.Path("JOURNAL.md")
+          texte = chemin.read_text(encoding="utf-8")
+
+          date = datetime.date.today().isoformat()
+          titre = os.environ.get("TITRE", "").strip() or "Entree"
+          contenu = os.environ.get("CONTENU", "").strip()
+          if not contenu:
+              contenu = "Fait :\n\nDecide :\n\nReste ouvert :"
+
+          bloc = "## {} — {}\n\n{}\n\n".format(date, titre, contenu)
+
+          lignes = texte.splitlines(keepends=True)
+          position = None
+          for i, ligne in enumerate(lignes):
+              if re.match(r"^## \d{4}-\d{2}-\d{2}", ligne):
+                  position = i
+                  break
+
+          if position is None:
+              texte = texte.rstrip("\n") + "\n\n" + bloc
+          else:
+              texte = "".join(lignes[:position]) + bloc + "".join(lignes[position:])
+
+          chemin.write_text(texte, encoding="utf-8")
+          print("Entree ajoutee :", titre)
+          PY
+
+      - name: Valider et pousser
+        env:
+          TITRE: ${{ inputs.titre }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add JOURNAL.md
+          if git diff --cached --quiet; then
+            echo "Aucune modification a valider."
+          else
+            git commit -m "Journal : $TITRE"
+            git push
+          fi
+
+  rappel-hebdomadaire:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer l'historique complet
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mesurer la fraicheur du journal
+        id: fraicheur
+        run: |
+          dernier=$(git log -1 --format=%ct -- JOURNAL.md)
+          if [ -z "$dernier" ]; then dernier=0; fi
+          maintenant=$(date +%s)
+          jours=$(( (maintenant - dernier) / 86400 ))
+          echo "jours=$jours" >> "$GITHUB_OUTPUT"
+          echo "Derniere mise a jour du journal : il y a $jours jour(s)."
+
+      - name: Ouvrir un rappel si necessaire
+        if: fromJSON(steps.fraicheur.outputs.jours) >= 7
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JOURS: ${{ steps.fraicheur.outputs.jours }}
+        run: |
+          ouverts=$(gh issue list --state open --search 'Journal de bord a mettre a jour in:title' --json number --jq 'length')
+          if [ "$ouverts" != "0" ]; then
+            echo "Un rappel est deja ouvert, rien a faire."
+            exit 0
+          fi
+          gh issue create \
+            --title 'Journal de bord a mettre a jour' \
+            --body "Le journal n'a pas ete mis a jour depuis $JOURS jours. Ajouter une entree depuis l'onglet Actions, workflow Journal de bord, bouton Run workflow. Refermer ce ticket ensuite."
