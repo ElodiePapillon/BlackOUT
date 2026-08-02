@@ -4,6 +4,8 @@ Réseau de communication texte résilient, hors infrastructure, à l'échelle d'
 
 Objectif : conserver un lien de messagerie de proximité quand les réseaux mobiles et Internet sont indisponibles (coupure électrique prolongée, panne opérateur, saturation lors d'un événement majeur). Ce dépôt rassemble les notes techniques, les choix d'architecture et les procédures de déploiement du projet.
 
+Finalité opérationnelle retenue : le réseau sert avant tout à diffuser où se trouvent les ressources, en quelle quantité et depuis quand l'information date. Il est plafonné à 50 nœuds, qui desservent des points et non des foyers.
+
 Ce système est un complément, pas un substitut aux moyens d'alerte et de secours officiels.
 
 ## Documents du dépôt
@@ -13,6 +15,7 @@ Ce système est un complément, pas un substitut aux moyens d'alerte et de secou
 | [dimensionnement-maillage.md](dimensionnement-maillage.md) | combien de nœuds, où les placer, et jusqu'où le canal tient |
 | [materiel-premiers-noeuds.md](materiel-premiers-noeuds.md) | choix des deux premiers nœuds et du relais de toiture |
 | [antennes-energie-alternatives.md](antennes-energie-alternatives.md) | antennes, alimentation solaire, comparaison avec les autres solutions radio |
+| [strategie-ressources.md](strategie-ressources.md) | plafond de 50 nœuds, format des bulletins de ressource, cadence |
 | [JOURNAL.md](JOURNAL.md) | journal de bord du projet |
 
 ## 1. Principe retenu
@@ -106,7 +109,7 @@ Les intervalles de télémétrie et de position sont espacés bien au-delà des 
 
 Le transport est limité à du texte court, au plus 237 octets utiles par paquet : pas de voix, pas d'image, pas d'accès Internet. La latence se compte en secondes, voire en dizaines de secondes sur plusieurs sauts. Les en-têtes de paquets circulent en clair, donc le graphe des échanges reste observable même si le contenu est chiffré. Enfin, un réseau à deux nœuds n'est pas un maillage : l'utilité réelle croît avec le nombre de participants, ce qui fait de la dimension humaine le principal facteur de réussite du projet.
 
-S'y ajoute une limite de capacité, établie depuis : le canal est unique et partagé, et avec les intervalles par défaut une soixantaine de nœuds suffit à le saturer avant même le premier message utile. Avec des réglages disciplinés, l'ordre de grandeur soutenable est de 100 à 200 nœuds pour la ville, soit un nœud pour 100 à 200 habitants, et de l'ordre de 150 messages par heure pour l'ensemble du réseau. BlackOUT est donc un réseau de points de contact entre référents, et non une messagerie grand public. Le calcul figure dans dimensionnement-maillage.md.
+S'y ajoute une limite de capacité, établie depuis : le canal est unique et partagé, et avec les intervalles par défaut une soixantaine de nœuds suffit à le saturer avant même le premier message utile. Le projet retient donc un **plafond ferme de 50 nœuds**, soit environ 20 % de marge sous ce point de rupture. Ce n'est pas un objectif à atteindre puis à dépasser, c'est une règle d'exploitation. BlackOUT relie des points de ressource et des référents, pas 20 000 habitants : les 50 nœuds desservent des points d'eau, de distribution, de santé et de regroupement de quartier, et la population accède à l'information par l'affichage tenu à ces points. Le calcul de saturation figure dans [dimensionnement-maillage.md](dimensionnement-maillage.md), la répartition des 50 nœuds et le format des bulletins dans [strategie-ressources.md](strategie-ressources.md).
 
 ## 9. Feuille de route
 
@@ -115,6 +118,8 @@ S'y ajoute une limite de capacité, établie depuis : le canal est unique et par
 | Dimensionnement du maillage à l'échelle de la ville | fait |
 | Choix du matériel des deux premiers nœuds | fait |
 | Instruction des antennes, de l'énergie et des alternatives radio | fait |
+| Stratégie ressources, plafond de 50 nœuds et format des bulletins | fait |
+| Automatisation de la tenue du journal de bord dans le dépôt | fait |
 | Commande des deux premiers nœuds | à faire |
 | Tests de portée au sol dans le quartier | à faire |
 | Repérage des points hauts exploitables | à faire |
@@ -123,6 +128,9 @@ S'y ajoute une limite de capacité, établie depuis : le canal est unique et par
 | Cartographie de la couverture obtenue | à faire |
 | Recherche d'une communauté Meshtastic locale déjà active | à faire |
 | Rédaction des procédures d'usage en cas de coupure | à faire |
+| Registre des points de ressource et de leurs identifiants | à faire |
+| Exercice de saisie et de lecture des bulletins | à faire |
+| Tableau de bord d'agrégation sur le nœud passerelle | à faire |
 
 ## 10. Questions encore ouvertes
 
