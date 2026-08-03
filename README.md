@@ -16,6 +16,10 @@ Ce système est un complément, pas un substitut aux moyens d'alerte et de secou
 | [materiel-premiers-noeuds.md](materiel-premiers-noeuds.md) | choix des deux premiers nœuds et du relais de toiture |
 | [antennes-energie-alternatives.md](antennes-energie-alternatives.md) | antennes, alimentation solaire, comparaison avec les autres solutions radio |
 | [strategie-ressources.md](strategie-ressources.md) | plafond de 50 nœuds, format des bulletins de ressource, cadence |
+| [securite-authentification.md](securite-authentification.md) | authentification des bulletins, durcissement, révocation des clés |
+| [conduite-en-coupure.md](conduite-en-coupure.md) | conduite en crise : rythme, rôles, affichage, modes dégradés |
+| [budget.md](budget.md) | chiffrage complet, paliers, fonctionnement annuel |
+| [usages-hors-coupure.md](usages-hors-coupure.md) | dix usages courants qui maintiennent le dispositif en vie |
 | [JOURNAL.md](JOURNAL.md) | journal de bord du projet |
 
 ## 1. Principe retenu
@@ -111,6 +115,8 @@ Le transport est limité à du texte court, au plus 237 octets utiles par paquet
 
 S'y ajoute une limite de capacité, établie depuis : le canal est unique et partagé, et avec les intervalles par défaut une soixantaine de nœuds suffit à le saturer avant même le premier message utile. Le projet retient donc un **plafond ferme de 50 nœuds**, soit environ 20 % de marge sous ce point de rupture. Ce n'est pas un objectif à atteindre puis à dépasser, c'est une règle d'exploitation. BlackOUT relie des points de ressource et des référents, pas 20 000 habitants : les 50 nœuds desservent des points d'eau, de distribution, de santé et de regroupement de quartier, et la population accède à l'information par l'affichage tenu à ces points. Le calcul de saturation figure dans [dimensionnement-maillage.md](dimensionnement-maillage.md), la répartition des 50 nœuds et le format des bulletins dans [strategie-ressources.md](strategie-ressources.md).
 
+La faiblesse d'authentification signalée plus haut est désormais traitée et n'appartient plus aux limites ouvertes. Les bulletins ne circulent plus en clair sur le canal partagé : ils partent en messages directs chiffrés par clé publique et signés par la clé privée du nœud émetteur, ce qui donne enfin une preuve d'origine. La synthèse rediffusée à tout le monde porte une signature applicative calculée avec une clé de synthèse distincte de la clé de canal, et les relais de toiture ne détiennent aucune clé privée de canal. Le détail du dispositif, la gestion du registre de clés et les points qu'il ne résout pas figurent dans [securite-authentification.md](securite-authentification.md).
+
 ## 9. Feuille de route
 
 | Étape | Statut |
@@ -120,6 +126,10 @@ S'y ajoute une limite de capacité, établie depuis : le canal est unique et par
 | Instruction des antennes, de l'énergie et des alternatives radio | fait |
 | Stratégie ressources, plafond de 50 nœuds et format des bulletins | fait |
 | Automatisation de la tenue du journal de bord dans le dépôt | fait |
+| Authentification des bulletins et durcissement des nœuds | fait |
+| Conduite du réseau pendant une coupure, créneaux et rôles humains | fait |
+| Budget complet du dispositif et échelonnement en paliers | fait |
+| Dix usages du réseau hors coupure | fait |
 | Commande des deux premiers nœuds | à faire |
 | Tests de portée au sol dans le quartier | à faire |
 | Repérage des points hauts exploitables | à faire |
@@ -127,10 +137,13 @@ S'y ajoute une limite de capacité, établie depuis : le canal est unique et par
 | Construction du relais solaire de toiture | à faire |
 | Cartographie de la couverture obtenue | à faire |
 | Recherche d'une communauté Meshtastic locale déjà active | à faire |
-| Rédaction des procédures d'usage en cas de coupure | à faire |
+| Rédaction des procédures d'usage en cas de coupure | fait |
 | Registre des points de ressource et de leurs identifiants | à faire |
 | Exercice de saisie et de lecture des bulletins | à faire |
 | Tableau de bord d'agrégation sur le nœud passerelle | à faire |
+| Enrôlement en présentiel des clés publiques et registre signé | à faire |
+| Maquette du tableau d'affichage A3 et point de relevé | à faire |
+| Premier exercice grandeur nature sur trois créneaux | à faire |
 
 ## 10. Questions encore ouvertes
 
@@ -155,3 +168,7 @@ https://meshtastic.org/docs/overview/range-tests/
 https://meshtastic.org/blog/choosing-the-right-device-role/
 
 https://meshtastic.org/blog/demystifying-router-late/
+
+https://meshtastic.org/docs/overview/encryption/
+
+https://meshtastic.org/docs/configuration/radio/security/
