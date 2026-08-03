@@ -3,6 +3,47 @@
 Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé, ce qui reste ouvert. Le README demeure le document de référence technique ; le journal n'en trace que l'histoire.
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
+
+## 2026-08-03 (soir) — Affichage A3, cadre institutionnel, grilles de ressources, licence et README
+
+### Le tableau d'affichage A3 existe
+
+affichage-a3.md fixe le dernier mètre du dispositif, celui que la radio ne couvre pas. Une feuille A3 portrait sous pochette, huit zones dans un ordre fixe, une typographie dimensionnée pour être lue à trois mètres et un titre lisible à dix. La zone la plus importante n'est pas la liste des points d'eau mais l'horodatage : « situation arrêtée à telle heure, prochaine mise à jour à telle heure ». Une information de crise sans date est une rumeur. Le gabarit est pré-imprimé en 600 exemplaires répartis dans trois bâtiments, parce qu'en coupure il n'y a ni imprimante ni photocopieuse. Un tableau non mis à jour à l'heure dite doit être barré en diagonale plutôt que laissé tel quel.
+
+### Le dispositif s'inscrit dans un PCS, s'aligne sur la résilience nationale, et sert aux pompiers sans les encombrer
+
+cadre-institutionnel.md répond aux trois questions dans l'ordre. Pour le plan communal de sauvegarde, la réponse est oui et sans forcer : le dispositif ne crée aucune rubrique nouvelle, il alimente le recensement des moyens, les transmissions de crise, l'information de la population, le poste de commandement et les exercices. Trois insertions suffisent, et le registre nominatif des personnes vulnérables reste dans l'annexe confidentielle, jamais dans le dépôt.
+
+Côté SGDSN, la formulation honnête est « cohérent avec les orientations nationales de résilience » et surtout pas « conforme » : cette maison ne valide pas d'outils communaux et il n'y a aucun agrément à chercher. Les points d'accroche réels sont la culture de résilience citoyenne, la continuité en cas de défaillance d'infrastructure critique, et la lutte contre la désinformation, où l'authentification par clé publique prend tout son sens.
+
+Pour les sapeurs-pompiers, le document commence par ce que le réseau ne fera jamais : il ne remplace pas ANTARES, ne reçoit aucun appel d'urgence et ne porte aucun ordre opérationnel. Ce qu'il apporte est ailleurs : une carte des ressources à jour, l'état d'autonomie des établissements sensibles, l'état des points d'eau incendie, et surtout un filtrage du bruit. Pendant une coupure longue, une part importante des appels au centre de traitement de l'alerte ne relève pas du secours mais de la recherche d'information. Un affichage fiable absorbe cette demande en amont.
+
+### Les transports, effectivement oubliés, sont rattrapés
+
+Le dossier ressources/ contient désormais cinq grilles et un mode d'emploi : énergie et carburants, eau et alimentation, santé et vulnérabilités, logistique et transports, humain et compétences. La grille 04 comble le manque relevé : sans transport, un inventaire ne sert à rien. Elle recense les véhicules mais aussi les points durs de circulation, portails électriques, barrières et pont bascule, qui immobilisent un parc entier pour une serrure. Les vélos cargo y figurent en bonne place, plus rapides qu'un fourgon sous trois kilomètres et sans carburant compté.
+
+Deux règles traversent tout le dossier. Toutes les valeurs sont **fictives** et doivent être remplacées. Et la grille santé ne contient que des lieux et des effectifs agrégés : ni nom, ni adresse, ni pathologie, ni équipement médical rattachable à quiconque. Un nombre suffit à dimensionner une tournée et ne met personne en danger.
+
+### La chaîne de diffusion est écrite jusqu'au bout
+
+diffusion-sans-electricite.md décrit les cinq étapes du relevé à l'habitant : relevé, synthèse, portage, affichage, voix. Le relais de quartier et le mégaphone y ont leurs règles, dont celle-ci : le mégaphone ne transmet jamais le détail, il dit où lire et à quelle heure. Six modes dégradés sont prévus, jusqu'au socle ultime : sans radio, sans papier et sans véhicule, un rassemblement quotidien à heure fixe devant la mairie continue de fonctionner. Le document s'achève sur la lutte contre la rumeur, où l'aveu d'ignorance daté vaut mieux qu'une espérance inventée.
+
+### Un exercice prêt à jouer
+
+exercices/exercice-01-coupure-72h.md simule 72 heures de coupure sur une journée réelle, avec dix événements à injecter. Le cinquième est le plus important : l'animation émet un faux bulletin non signé depuis un nœud non enrôlé et l'on observe si l'opérateur le refuse. C'est le test grandeur nature de la solution de sécurité. Une version allégée à douze personnes sur trois heures teste l'essentiel.
+
+### Licence et README
+
+Licence **Apache 2.0** : permissive, avec concession de brevet et limitation de responsabilité, ce qui la rend plus confortable qu'une MIT pour une collectivité qui réutilise. C'est un choix réversible tant que le dépôt n'a pas de contributeur externe ; à confirmer avant toute publication.
+
+Le README a été refondu en page de présentation : accroche, chiffres clés, ce que le dispositif n'est pas, quatre parcours de lecture selon le profil, carte du dépôt en trois blocs, état d'avancement et trois règles non négociables. Les sections purement techniques ont été déplacées dans reference-technique.md pour ne rien perdre.
+
+Enfin partager-le-projet.md liste les publics, les canaux et quatre messages types prêts à l'emploi. Il commence par un rappel : le dépôt est privé, le rendre public est une décision à prendre soi-même, et la structure des grilles peut être publique alors que leur contenu rempli par une commune réelle ne l'est pas.
+
+### À faire
+
+Commander les deux premiers nœuds, faire les tests de portée au sol, repérer les points hauts. Imprimer une maquette du gabarit A3 et la tester devant de vrais passants. Produire l'export PDF de l'ensemble. Puis trancher la visibilité du dépôt et identifier une première commune volontaire, ce qui vaut mieux que cent partages.
+
 ## 2026-08-03 — Authentification des bulletins, conduite en coupure, budget et usages courants
 
 ### Le problème de sécurité est fermé
