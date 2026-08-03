@@ -31,15 +31,3 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de ma haute considératio
 
 Élodie Perrichon
 [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-Ce courrier est un signalement, pas une demande. C'est ce qui le rend envoyable : une administration centrale qui n'a rien à accorder n'a rien à refuser. La phrase la plus importante est celle qui écarte toute revendication de conformité, parce que c'est l'erreur qui disqualifierait immédiatement le dossier.
-
-Le paragraphe sur l'état d'avancement est laissé volontairement à compléter : s'il reste vide, le courrier ne doit pas partir. Un signalement sans le moindre élément de terrain n'a pas d'objet, et cet envoi prématuré coûterait la possibilité d'un second envoi mieux armé.
-
-La réponse la plus probable est un accusé de réception, ou aucune réponse. Ce n'est pas un échec : la trace de l'envoi a une valeur propre dans le tableau de suivi et dans le journal de bord.
-
-À compléter avant envoi : la sous-direction destinataire, l'état d'avancement réel, et le nom de la ou des personnes ayant relu le dossier si elles acceptent d'être citées.
