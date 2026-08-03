@@ -33,15 +33,3 @@ Je vous prie d'agréer, Madame la Directrice générale, Monsieur le Directeur g
 
 Élodie Perrichon
 [adresse dans la commune] — [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-C'est le courrier qui a la plus forte probabilité d'aboutir à quelque chose de concret, parce que le destinataire peut décider seul d'accorder une réunion. C'est donc lui qu'il faut soigner le plus, même s'il est le deuxième dans l'ordre retenu.
-
-Deux pièges à éviter. Le premier est de demander trop : ni budget, ni délibération, ni inscription au PCS dès le premier contact. Le second est de laisser croire que la commune devrait remplir les grilles d'inventaire et les publier : les grilles remplies d'une commune réelle ne doivent jamais être rendues publiques, et il faut le dire de vive voix en réunion, parce que c'est le point qui peut coûter cher si l'on se trompe.
-
-Si une réunion est obtenue, y aller avec le classeur papier décrit dans [../export-imprimable.md](../export-imprimable.md) et une maquette A3. Un dispositif qui prétend fonctionner sans électricité et qui se présente en diaporama projeté se décrédibilise tout seul.
-
-À compléter avant envoi : le nom exact et la civilité du DGS, le nom de la commune, l'adresse dans la commune, et le numéro de téléphone.
