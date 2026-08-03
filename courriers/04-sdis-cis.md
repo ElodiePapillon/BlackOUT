@@ -35,15 +35,3 @@ Je vous prie d'agréer, Mon commandant, Madame, Monsieur, l'expression de ma con
 
 Élodie Perrichon
 [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-Ce courrier est volontairement le plus humble des sept, et c'est ce qui lui donne sa chance. On ne vend pas un outil à des sapeurs-pompiers : on leur demande de dire ce qui ne marchera pas. Le paragraphe sur le risque de confusion est le cœur de la lettre, pas une précaution.
-
-La formule d'appel doit être ajustée au grade réel du destinataire ; en cas de doute, « Madame, Monsieur » seul est préférable à un grade erroné.
-
-Si une réponse arrive et qu'elle est négative sur un point technique, elle doit être intégrée au dépôt et non écartée, en citant la source de la correction dans le journal de bord. C'est ce qui distinguera ce dossier d'un dossier d'auteur.
-
-À compléter avant envoi : département, commune, adresses des deux destinataires, grade et nom du chef de centre.
