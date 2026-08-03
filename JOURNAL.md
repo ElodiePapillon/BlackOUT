@@ -3,6 +3,34 @@
 Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé, ce qui reste ouvert. Le README demeure le document de référence technique ; le journal n'en trace que l'histoire.
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
+## 2026-08-03 — Authentification des bulletins, conduite en coupure, budget et usages courants
+
+### Le problème de sécurité est fermé
+
+La faille signalée était réelle et bloquante : sur un canal Meshtastic, la clé AES256 est partagée par tous les membres, elle n'apporte que de la confidentialité, aucun contrôle d'intégrité et aucune authentification. Le champ expéditeur n'est qu'indicatif : quiconque détient la clé peut forger un bulletin « il reste 1 200 litres au point P07 » sous l'identité d'un autre nœud. Pour un réseau dont la seule raison d'être est de dire où sont les ressources, c'était rédhibitoire.
+
+La solution retenue tient en trois décisions, détaillées dans securite-authentification.md. Les bulletins ne sont plus postés sur le canal : ils partent en messages directs vers la passerelle, donc chiffrés avec la clé publique du destinataire et signés avec la clé privée de l'émetteur, ce que le firmware fait nativement depuis la 2.5.0. La synthèse rediffusée à tout le monde, elle, reste un message de canal, mais elle porte désormais une signature applicative calculée avec une clé de synthèse distincte de la clé de canal, tronquée à huit caractères pour le courant et complète en Ed25519 pour les messages à fort impact. Un compteur monotone par émetteur empêche le rejeu d'un ancien bulletin encore valide. Enfin les relais de toiture, matériel exposé et non surveillé, ne détiennent aucune clé privée de canal : ils relaient sans lire.
+
+Ce que cela ne résout pas est écrit noir sur blanc : un nœud volé déverrouillé reste légitime jusqu'à révocation, il n'y a pas de confidentialité persistante, les en-têtes circulent en clair et rien ne protège du brouillage. Le coût du dispositif a été chiffré : environ cinquante secondes d'air par heure, soit 1,4 % d'occupation du canal, ce qui reste très en deçà du seuil.
+
+### La conduite en coupure part de l'humain, pas de la radio
+
+conduite-en-coupure.md pose le principe demandé : c'est l'activité humaine qui s'adapte au réseau. Un maillage de 50 nœuds ne peut pas absorber un flux continu, donc la ville passe à trois créneaux fixes par jour — relève 07h00, mi-journée 12h30, clôture 18h00 — suivis chacun d'une synthèse et d'un affichage papier A3 dans les quartiers, avec silence radio de 19h30 à 06h30 pour économiser les batteries. Quatre règles gouvernent le reste : on consulte à heure dite au lieu d'interroger en continu, on déplace l'information plutôt que les personnes, on concentre l'activité sur les heures de jour, on réduit le nombre de décisions à prendre.
+
+Six services vitaux sont hiérarchisés dans cet ordre : eau, santé, alimentation, énergie, abri, information. Le document fixe un profil radio de crise, cinq niveaux de priorité de message avec suspension des niveaux bas au-delà de 15 % d'occupation, des modes dégradés, et cinq indicateurs de bonne santé. Il chiffre aussi la ressource la plus rare : environ soixante personnes mobilisées, dont vingt-sept référents de point, deux opérateurs passerelle et un coordinateur doublé.
+
+### Le budget
+
+budget.md chiffre l'ensemble à environ 12 350 euros en investissement initial, soit 0,62 euro par habitant, et 1 250 euros de fonctionnement annuel. Les 50 nœuds représentent 8 750 euros, l'affichage et l'outillage le reste. Le déploiement est découpé en quatre paliers, du premier essai à 550 euros jusqu'au maillage complet, pour pouvoir s'arrêter ou continuer à chaque étape. La vraie contrainte n'est pas l'argent : c'est 300 heures de travail humain pour la mise en place et 120 heures par an ensuite.
+
+### Dix usages hors coupure
+
+usages-hors-coupure.md répond à la dernière demande, avec une intention précise : un réseau qui ne sert qu'en cas de crise ne fonctionne pas le jour de la crise. Les dix usages retenus vont de la couverture d'événements publics aux battues et recherches de personne, à la surveillance hydrologique, aux sites communaux isolés, à la chaîne du froid, à la vigie feux, à la météo de quartier, aux chantiers et sous-sols, à la pédagogie et à l'exercice annuel du plan communal. Trois règles encadrent le tout : la stratégie ressources reste prioritaire, le profil de crise suspend tous les usages courants, et aucun usage ne doit servir à suivre des personnes.
+
+### À faire
+
+Enrôler les clés publiques en présentiel et publier le registre signé, maquetter le tableau d'affichage A3, puis monter le premier exercice grandeur nature sur trois créneaux. Côté matériel, la commande des deux premiers nœuds et les tests de portée au sol restent en attente.
+
 
 ## 2026-08-02 — Automatisation du journal, plafond de 50 nœuds, stratégie ressources
 
