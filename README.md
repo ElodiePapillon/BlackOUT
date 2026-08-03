@@ -64,6 +64,7 @@ Les bulletins partent désormais en messages directs **chiffrés par clé publiq
 | [diffusion-sans-electricite.md](diffusion-sans-electricite.md) | du relevé à l'habitant : portage, affichage, mégaphone, relais de quartier |
 | [affichage-a3.md](affichage-a3.md) | gabarit du tableau papier, zones, typographie, stock |
 | [ressources/](ressources) | cinq grilles d'inventaire à remplir par la commune |
+| [export-imprimable.md](export-imprimable.md) | produire le classeur papier et les fiches plastifiées avant la coupure |
 
 ### Inscrire et faire vivre
 
@@ -104,7 +105,7 @@ Radio LoRa 868 MHz pilotée par le firmware Meshtastic, préréglage LONG_FAST, 
 | Enrôlement en présentiel des clés publiques | à faire |
 | Maquette imprimée du tableau A3 | à faire |
 | Premier exercice grandeur nature | à faire |
-| Export PDF imprimable de l'ensemble | à faire |
+| Export imprimable de l'ensemble | notice écrite, script à faire  |
 
 ## Trois règles qui ne se négocient pas
 
