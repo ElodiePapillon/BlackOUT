@@ -4,6 +4,20 @@ Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
 
+## 2026-08-04 — Premières démarches de dépôt pérenne
+
+### Ce qui est parti
+
+Un courriel a été adressé au support de HAL pour trois questions de procédure : la possibilité d'un dépôt sans affiliation à un laboratoire, le type de document à retenir pour une documentation d'ingénierie qui n'est pas un logiciel, et la bonne pratique pour éviter un doublon de référence lorsque le même travail porte déjà un DOI Zenodo. Aucune réponse à ce jour.
+
+### Ce qui est décidé
+
+Le dépôt passe en public, à deux exceptions près : le journal de bord et tout ce qui touche aux courriers de diffusion restent hors de la version publique. Le courriel à l'équipe qui tient code.gouv.fr, qui porte sur le périmètre de référencement et sur la gazette BlueHats, attend que le dépôt pérenne existe. Demander un référencement en donnant un lien mort n'a pas de sens, et c'est la seule chose que verrait le destinataire aujourd'hui.
+
+### Ce qui reste bloqué
+
+Le passage en public, la release v0.1.0 et l'archivage Zenodo ne sont pas faits : ces trois actes supposent une authentification personnelle et une décision irréversible, ils ne se délèguent pas. Tant que le DOI n'existe pas, les sept courriers institutionnels n'ont aucune référence citable à porter et restent des brouillons. Les adresses des destinataires ne sont pas encore réunies dans le dépôt, ce qui est le second obstacle et non le moindre.
+
 ## 2026-08-03 (fin de soirée) — Notice d'export imprimable
 
 ### Le dépôt existe désormais sur papier
