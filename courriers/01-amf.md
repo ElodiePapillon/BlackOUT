@@ -36,13 +36,3 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération dist
 Élodie Perrichon
 [courriel] — [téléphone facultatif]
 [identifiant ORCID une fois créé]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-Ce courrier est le plus important des sept, parce qu'il est le seul qui peut démultiplier la lecture. Il est aussi le plus exposé : une association d'élus reçoit beaucoup de sollicitations et écarte très vite ce qui ressemble à une offre commerciale ou à un discours de peur. D'où trois choix assumés : dire ce que ce n'est pas dès le troisième paragraphe, avouer l'absence de déploiement, et ne demander qu'une chose atteignable.
-
-La faiblesse de cette approche doit être reconnue : commencer par l'échelon national donne de la portée sans apporter la moindre preuve de terrain. Si un premier exercice communal peut être mené avant l'envoi, ce courrier deviendra beaucoup plus solide. C'est un arbitrage à trancher, pas une évidence.
-
-À vérifier avant envoi : le dépôt est public, le DOI existe, les deux liens s'ouvrent depuis une session non connectée, aucune valeur d'inventaire réelle ne figure dans le dépôt, et le nom employé est le même que dans le fichier de citation.
