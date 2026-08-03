@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Si vous réutilisez ou citez ce travail, merci d'utiliser les informations ci-dessous."
+title: "BlackOUT : réseau de communication communal résilient hors infrastructure (LoRa 868 MHz et Meshtastic)"
+type: software
+authors: [{family-names: "Papillon", given-names: "Elodie"}]
+license: Apache-2.0
+repository-code: "https://github.com/ElodiePapillon/BlackOUT"
+version: 0.1.0
+date-released: "2026-08-03"
+keywords: ["résilience territoriale", "gestion de crise", "plan communal de sauvegarde", "sécurité civile", "LoRa", "Meshtastic", "868 MHz", "réseau maillé", "coupure électrique", "basse technologie", "inventaire de ressources"]
+abstract: "Dispositif communal de communication conçu pour fonctionner sans électricité de réseau, sans téléphonie et sans Internet, à l'échelle d'une ville de 20 000 habitants. Cinquante nœuds radio LoRa en bande ISM 868 MHz, portés par Meshtastic, relient les points d'eau, de vivres, de soins et d'abri à un poste de commandement communal. Le dispositif répond à une seule question : où sont les ressources, en quelle quantité, et à quelle heure l'information a été vérifiée. Trois fois par jour, une synthèse signée est diffusée vers les quartiers puis affichée sur papier au format A3. Le dépôt contient la conception radio, l'authentification des bulletins par clé publique, le dimensionnement du maillage, le budget, les grilles d'inventaire à remplir par la commune, le protocole de diffusion aux habitants sans électricité, un scénario d'exercice de 72 heures et la lecture du dispositif au regard du plan communal de sauvegarde. Ce n'est pas un moyen d'alerte, ce n'est pas un réseau de secours, et il ne se substitue pas aux numéros d'urgence."
