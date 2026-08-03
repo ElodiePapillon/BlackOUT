@@ -4,6 +4,28 @@ Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
 
+## 2026-08-03 (fin de soirée) — Notice d'export imprimable
+
+### Le dépôt existe désormais sur papier
+
+export-imprimable.md règle la contradiction de départ du projet : un dispositif conçu pour la coupure électrique était entièrement stocké sur une plateforme qui n'est accessible qu'avec de l'électricité et du réseau. La notice distingue deux objets qu'il ne faut pas confondre. Le classeur de référence rassemble seize documents dans un ordre imposé, entre 80 et 120 pages, trois exemplaires reliés non plastifiés : il sert à comprendre et à décider. Le jeu de fiches de terrain ne compte que quelques feuilles, plastifiées, écrites au feutre effaçable : c'est le seul objet que l'on manipule pendant la crise.
+
+Deux méthodes de production sont décrites. L'impression du navigateur fichier par fichier ne demande rien à installer mais emporte l'interface dans la marge et coupe les tableaux. Pandoc produit un PDF propre avec sommaire, et c'est la voie retenue, mais le script d'export n'est pas encore écrit : la tâche est ouverte et le README l'inscrit comme telle.
+
+### Deux détails qui décident du reste
+
+Prévoir les feutres et le chiffon avec les fiches plastifiées. Une fiche plastifiée sans feutre ne sert à rien, et c'est le genre d'oubli qui se découvre le jour de l'exercice.
+
+Porter au feutre, sur chaque couverture, la date d'impression et le nom de celui qui a imprimé. Sans cela, personne ne sait six mois plus tard si le classeur posé sur l'étagère est encore juste. Les exemplaires périmés doivent être retirés physiquement, sinon ils continuent de circuler.
+
+### Où en est la liste demandée
+
+Tous les points de la dernière série sont traités : tableau A3, lecture PCS, lecture SGDSN, utilité pour les sapeurs-pompiers, README de présentation, licence Apache 2.0, communautés cibles et messages types, cinq grilles de ressources dont les transports qui manquaient, protocole de diffusion sans électricité, dossier exercices avec un scénario de 72 heures, et format imprimable.
+
+### À faire à la prochaine session
+
+Écrire le script d'export Pandoc et le déposer dans le dépôt. Chiffrer dans budget.md le coût d'impression et de plastification, aujourd'hui absent alors que 600 A3 et une trentaine de fiches plastifiées représentent une ligne réelle. Trancher qui détient les trois classeurs et qui répond de leur mise à jour. Vérifier la disponibilité et les prix réels des cartes retenues avant toute commande.
+
 ## 2026-08-03 (soir) — Affichage A3, cadre institutionnel, grilles de ressources, licence et README
 
 ### Le tableau d'affichage A3 existe
