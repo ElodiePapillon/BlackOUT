@@ -33,15 +33,3 @@ Je vous prie d'agréer, Madame la Présidente, Monsieur le Président, l'express
 
 Élodie Perrichon
 [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-L'argument le plus fort auprès d'une intercommunalité n'est pas la résilience mais la compatibilité : deux communes voisines qui équipent leurs services avec des matériels incompatibles ne pourront pas s'entraider. C'est à mettre en avant si un entretien est obtenu.
-
-Piège à éviter : demander la prise en charge du budget. Une intercommunalité sollicitée financièrement au premier contact renvoie vers les communes. Ne demander que l'accès aux points hauts et l'inscription à l'ordre du jour.
-
-Le plafond de cinquante nœuds s'entend par réseau communal. Une lecture intercommunale pourrait faire croire à un réseau unique de plusieurs centaines de nœuds, ce que le canal partagé ne supporte pas : c'est à préciser dès le premier échange, faute de quoi le dossier sera mal compris.
-
-À compléter avant envoi : nom exact de l'établissement, civilité et nom du président, compétences effectivement transférées en matière d'eau et de mobilités.
