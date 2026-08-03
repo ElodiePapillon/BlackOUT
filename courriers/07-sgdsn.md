@@ -31,17 +31,3 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de ma haute considératio
 
 Élodie Perrichon
 [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-Ce courrier existe pour une raison unique : poser la question du risque avant que quelqu'un d'autre ne la pose à votre place. Il ne demande ni reconnaissance ni visibilité, et c'est précisément ce qui le rend légitime.
-
-Deux interdits absolus. Ne jamais écrire que le dispositif est conforme, agréé ou homologué par le SGDSN ou par quiconque. Et ne jamais citer un échange avec ce service comme une caution dans un autre courrier, un article ou une présentation : la phrase d'engagement contenue dans la lettre doit être tenue.
-
-La réponse la plus probable est l'absence de réponse, et c'est un résultat acceptable. La valeur de cet envoi est d'abord interne : il oblige à formuler noir sur blanc le risque que porte le projet.
-
-Si une réponse arrive et signale une précaution manquante, elle doit être appliquée au dépôt sans discussion, et avant tout autre travail.
-
-À compléter avant envoi : le service destinataire, et la vérification que le dépôt public ne contient aucune donnée réelle d'inventaire.
