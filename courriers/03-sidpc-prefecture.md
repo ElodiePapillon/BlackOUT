@@ -35,13 +35,3 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération dist
 
 Élodie Perrichon
 [courriel] — [téléphone]
-
----
-
-## Notes de rédaction, à ne pas envoyer
-
-Le SIDPC est le destinataire technique le plus compétent de la liste sur la question institutionnelle. C'est aussi celui qui repèrera immédiatement toute approximation réglementaire : mieux vaut poser des questions que d'affirmer des réponses. Les références réglementaires citées dans le dossier doivent être vérifiées dans leur version en vigueur avant cet envoi.
-
-Le délégué militaire départemental peut figurer en copie parce qu'il siège en cellule de crise préfectorale, et à ce titre seulement. Le mettre en destinataire principal ferait basculer la lecture du dossier d'un outil de continuité civile vers un objet de défense, ce qui serait un contresens et un mauvais service rendu au projet.
-
-À compléter avant envoi : le département, l'adresse du service, et si possible le nom du chef de service.
