@@ -1,12 +1,12 @@
 # Diffusion institutionnelle et dépôt pérenne
 
-Ce document fixe deux choses : où déposer le projet pour qu'il soit citable et durable, et à qui l'envoyer, dans quel ordre, avec quel contenu. Il ne comporte aucune donnée nominative et n'entre pas dans le classeur de crise décrit dans export-imprimable.md.
+Ce document fixe une chose : où déposer le projet pour qu'il soit citable, conservé et référencé. Il ne comporte aucune donnée nominative et n'entre pas dans le classeur de crise décrit dans export-imprimable.md.
 
-## 1. Pourquoi le dépôt pérenne passe avant les courriers
+## 1. Pourquoi le dépôt pérenne passe avant tout le reste
 
-Un dossier envoyé à une administration sans référence stable devient introuvable en quelques mois. Un lien vers un dépôt privé renvoie une page d'erreur au premier destinataire qui clique. Un projet sans licence lisible ne peut pas être repris par un service public, même quand il le voudrait.
+Un travail cité sans référence stable devient introuvable en quelques mois. Un lien vers un dépôt privé renvoie une page d'erreur au premier lecteur qui clique. Un projet sans licence lisible ne peut pas être repris par un service public, même quand il le voudrait.
 
-D'où l'ordre suivant, qui ne se raccourcit pas : rendre le dépôt public, figer une version, obtenir un identifiant pérenne, puis écrire. Les courriers citent l'identifiant et la licence, donc ils partent en dernier.
+D'où l'ordre suivant, qui ne se raccourcit pas : rendre le dépôt public, figer une version, obtenir un identifiant pérenne, puis demander le référencement aux plateformes.
 
 | Étape | Ce qu'elle produit | Qui la fait |
 | --- | --- | --- |
@@ -17,7 +17,6 @@ D'où l'ordre suivant, qui ne se raccourcit pas : rendre le dépôt public, fige
 | 5 | Déclaration à Software Heritage | Conservation longue durée du contenu |
 | 6 | Dépôt sur HAL | Référencement dans l'archive ouverte française |
 | 7 | BlueHats et code.gouv.fr | Visibilité dans l'écosystème du secteur public |
-| 8 | Courriers aux destinataires | L'entrée dans le circuit institutionnel |
 
 Les étapes 2 à 4 ne se délèguent pas : changer la visibilité d'un dépôt et publier de manière irréversible sont des décisions de la propriétaire, et elles supposent une authentification personnelle.
 
@@ -33,7 +32,7 @@ Zenodo attribue un identifiant pérenne au dépôt. C'est ce qui permet à un se
 
 Se connecter à Zenodo, ouvrir la page des dépôts GitHub liés, activer l'interrupteur en face de BlackOUT, puis revenir sur GitHub et publier une release, par exemple v0.1.0, avec un titre en français. Zenodo récupère l'archive et lit CITATION.cff pour le titre, l'auteur, la licence et les mots-clés.
 
-Deux points ne se rattrapent pas. Un enregistrement Zenodo publié ne se supprime pas, c'est le principe même d'un dépôt pérenne, donc la relecture de la section 2 se fait avant et non après. Et c'est l'identifiant de concept, celui qui désigne toutes les versions, qu'il faut citer dans les courriers, pas celui d'une version précise qui vieillira.
+Deux points ne se rattrapent pas. Un enregistrement Zenodo publié ne se supprime pas, c'est le principe même d'un dépôt pérenne, donc la relecture de la section 2 se fait avant et non après. Et c'est l'identifiant de concept, celui qui désigne toutes les versions, qu'il faut citer partout, pas celui d'une version précise qui vieillira.
 
 Deux réglages ajoutent de la crédibilité sans rien coûter : ouvrir un identifiant ORCID et le déclarer dans CITATION.cff, et décrire le dépôt comme une documentation technique plutôt que comme un logiciel, ce qui correspond à la réalité du contenu. Une fois le DOI obtenu, l'inscrire dans CITATION.cff et dans le README.
 
@@ -48,32 +47,10 @@ Deux réglages ajoutent de la crédibilité sans rien coûter : ouvrir un identi
 
 Une nuance qui évite un malentendu : ce projet n'est pas un logiciel mais une documentation d'ingénierie territoriale accompagnée de configurations radio. Il faut le présenter ainsi, sans quoi la première question reçue sera de savoir où est le code.
 
-## 5. Les destinataires, dans l'ordre retenu
+## 5. Ce qu'il ne faut jamais écrire
 
-| Rang | Destinataire | Ce qu'il peut faire | Ce qu'il ne fera pas |
-| --- | --- | --- | --- |
-| 1 | Association des maires de France et association départementale | Diffuser à un grand nombre de communes, inscrire le sujet à une commission | Ne valide rien sur le fond technique |
-| 2 | Directeur général des services de la commune | Ouvrir un dossier, affecter des agents, préparer un arbitrage budgétaire | N'engage rien sans décision de l'élu |
-| 3 | SIDPC de la préfecture | Dire si le dispositif est cohérent avec le PCS et l'ORSEC | Ne finance pas et ne prescrit pas |
-| 4 | SDIS et centre d'incendie et de secours local | Vérifier l'articulation avec ANTARES et le rôle du poste de commandement | Ne recevra aucun ordre par cette radio |
-| 5 | Intercommunalité | Porter un plan intercommunal de sauvegarde et mutualiser le matériel | Ne se substitue pas aux communes |
-| 6 | DGSCGC, ministère de l'Intérieur | Lire le dispositif au regard de la doctrine nationale de sécurité civile | Ne délivre aucun agrément pour ce type d'outil |
-| 7 | SGDSN | Apprécier la cohérence avec les orientations nationales de résilience | Ne délivre ni label, ni conformité, ni homologation |
+Ni conforme SGDSN, ni agréé, ni homologué : aucun de ces mots ne correspond à une procédure existante pour un outil communal de ce type, et leur emploi suffit à disqualifier un dossier auprès d'un lecteur compétent. Ne jamais présenter le dispositif comme un moyen d'alerte des populations ni comme un réseau de secours. Ne jamais publier un inventaire rempli. Ne promettre ni couverture radio ni disponibilité qui n'ait été mesurée sur le terrain. Ne pas annoncer de calendrier de déploiement tant que la commande du premier palier n'est pas passée.
 
-Une remarque de méthode, à lire avant d'écrire à l'association des maires. Commencer par elle donne de la portée mais aucune preuve de terrain, et la première question sera de savoir quelle commune a testé le dispositif. Le dossier gagne donc à annoncer l'état réel du projet, documentation complète et aucun déploiement à ce jour, plutôt que de laisser croire à un dispositif éprouvé. La crédibilité vient de l'exactitude de cet aveu, pas de son omission.
+## 6. À trancher
 
-Le ministère des Armées ne figure pas dans cette liste, et ce n'est pas un oubli. La continuité de la vie civile pendant une coupure relève de la sécurité civile, donc du ministère de l'Intérieur, et sur le terrain du préfet, du maire et du SDIS. Un inventaire communal de points d'eau n'entre dans aucun de ses circuits d'instruction. Seule exception étroite : le délégué militaire départemental participe à la planification de crise auprès du préfet et peut être un lecteur pertinent, en copie d'une démarche préfectorale, jamais comme destinataire principal.
-
-## 6. Ce que chaque courrier doit contenir
-
-L'objet du dispositif en une phrase, puis ce qu'il n'est pas, dans cet ordre : c'est la seule manière d'éviter que le lecteur imagine un réseau d'alerte. Ensuite trois chiffres seulement, l'investissement par habitant, le plafond de cinquante nœuds et les trois créneaux quotidiens. Puis la référence citable et la licence. Puis l'état d'avancement réel, sans enjolivement. Et enfin une demande précise et petite : un rendez-vous, une relecture, une inscription à l'ordre du jour d'une commission. Une demande précise obtient une réponse ; une demande vague obtient un classement.
-
-Les textes prêts à l'emploi pour les communautés techniques et pour un premier contact en mairie se trouvent dans partager-le-projet.md. Les sept lettres correspondant aux destinataires du tableau de la section 5 restent à rédiger.
-
-## 7. Ce qu'il ne faut jamais écrire
-
-Ni conforme SGDSN, ni agréé, ni homologué : aucun de ces mots ne correspond à une procédure existante pour un outil communal de ce type, et leur emploi suffit à disqualifier un dossier auprès d'un lecteur compétent. Ne jamais présenter le dispositif comme un moyen d'alerte des populations ni comme un réseau de secours. Ne jamais joindre un inventaire rempli. Ne promettre ni couverture radio ni disponibilité qui n'ait été mesurée sur le terrain. Ne pas annoncer de calendrier de déploiement tant que la commande du premier palier n'est pas passée.
-
-## 8. À trancher
-
-Le nom sous lequel l'autrice signe le dépôt pérenne et les courriers, qui doit être identique partout, faute de quoi la trace se disperse. L'ouverture d'un identifiant ORCID. Le périmètre exact de ce qui devient public. Qui signe les courriers, l'autrice à titre personnel ou la commune. Et la question de fond : écrire à l'association des maires maintenant, ou attendre qu'une commune ait conduit l'exercice de 72 heures décrit dans le dossier exercices.
+Le nom sous lequel l'autrice signe le dépôt pérenne, qui doit être identique partout, faute de quoi la trace se disperse. L'ouverture d'un identifiant ORCID. Le périmètre exact de ce qui devient public. Et la question de fond : demander le référencement dès maintenant, ou attendre qu'une commune ait conduit l'exercice de 72 heures décrit dans le dossier exercices.
