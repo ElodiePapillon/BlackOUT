@@ -4,7 +4,7 @@ Où diffuser le lien, à qui, et avec quels mots. Ce document ne déclenche rien
 
 ## 1. Ce qu'il faut régler avant de partager quoi que ce soit
 
-**Le dépôt est privé.** Le rendre public est un changement de visibilité à effectuer soi-même, en conscience, dans les paramètres du dépôt. Tant que ce n'est pas fait, aucun lien partagé ne s'ouvrira.
+**Le dépôt est public.** La bascule de visibilité est faite. Ce qui est publié ne se dépublie pas vraiment, puisque les copies et les caches en gardent la trace : chaque ajout se relit donc avant d'être poussé, pas après.
 
 **Arbitrer ce qui reste interne.** La structure des grilles peut être publique. Leur contenu rempli par une commune réelle ne l'est pas : un inventaire des stocks de carburant, des cuves et des accès aux locaux techniques est un document sensible. La bonne pratique est de publier le modèle vide et de garder l'inventaire rempli dans un dépôt séparé, privé, ou hors ligne.
 
@@ -63,21 +63,7 @@ Un conseil sur l'ordre : commencer par les communautés techniques, qui vont tro
 >
 > Tout est documenté et ouvert. Je cherche des erreurs, pas des étoiles.
 
-### 4.3 Courriel à une direction générale des services
-
-> Objet : dispositif communal d'information des habitants en cas de coupure longue
->
-> Madame, Monsieur,
->
-> Je vous propose un dispositif documente et libre de droits qui répond à une question précise : pendant une coupure électrique et téléphonique prolongée, comment la commune continue-t-elle de dire aux habitants où se trouvent l'eau, les vivres, les soins et les abris.
->
-> Le dispositif repose sur 50 boitiers radio autonomes et sur un affichage papier tenu trois fois par jour. L'investissement est de l'ordre de 12 000 euros, le fonctionnement d'environ 1 250 euros par an. La contrainte réelle n'est pas financière mais humaine : environ 300 heures de mise en place et 120 heures par an.
->
-> Il s'insère dans les rubriques existantes du plan communal de sauvegarde sans en créer de nouvelle, et il ne se substitue à aucun moyen d'alerte ou de secours.
->
-> Je peux vous présenter l'ensemble en trente minutes, ou faire une démonstration lors d'un événement communal déjà prévu, ce qui reste la meilleure entrée en matière.
-
-### 4.4 Une phrase, pour un couloir
+### 4.3 Une phrase, pour un couloir
 
 > Cinquante boitiers radio autonomes et des feuilles A3 dans les quartiers, pour que la ville sache où est l'eau quand plus rien ne marche. Douze mille euros, et surtout soixante personnes.
 
@@ -93,4 +79,4 @@ Les étoiles ne mesurent rien. Trois signaux valent quelque chose : une communau
 
 ## 7. Ce qui reste à faire
 
-Décider de la visibilité du dépôt. Vérifier les critères de référencement des plateformes publiques avant de les solliciter. Produire l'export PDF imprimable. Et identifier une première commune volontaire, ce qui vaut mieux que cent partages.
+Obtenir l'identifiant pérenne Zenodo, puis vérifier les critères de référencement des plateformes publiques avant de les solliciter. Produire l'export PDF imprimable. Et identifier une première commune volontaire, ce qui vaut mieux que cent partages.
