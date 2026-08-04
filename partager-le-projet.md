@@ -23,7 +23,7 @@ Où diffuser le lien, à qui, et avec quels mots. Ce document ne déclenche rien
 | Communautés techniques radio | authentification, dimensionnement, mesures | approximations sur la propagation |
 | Citoyens engagés en résilience | usages concrets, budget accessible | complexité inutile |
 
-Un seul message ne parlera pas aux quatre. Les modèles ci-dessous sont donc séparés.
+Un seul message ne parlera pas aux quatre. Les trois modèles ci-dessous sont donc séparés, et aucun ne vise les élus : ce public-là s'aborde en présentiel, par la commune, et non avec un texte prêt à l'emploi.
 
 ## 3. Canaux à viser
 
