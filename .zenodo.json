@@ -1,0 +1,10 @@
+{
+  "upload_type": "software",
+  "title": "BlackOUT : réseau de communication communal résilient hors infrastructure (LoRa 868 MHz et Meshtastic)",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "creators": [{"name": "Perrichon, Elodie", "orcid": "0009-0001-7032-2991"}],
+  "keywords": ["résilience territoriale", "gestion de crise", "plan communal de sauvegarde", "sécurité civile", "LoRa", "Meshtastic", "868 MHz", "réseau maillé", "coupure électrique", "basse technologie"],
+  "description": "Dispositif communal de communication conçu pour fonctionner sans électricité de réseau, sans téléphonie et sans Internet, à l'échelle d'une ville de 20 000 habitants. Cinquante noeuds radio LoRa en bande ISM 868 MHz, portés par Meshtastic, relient les points d'eau, de vivres, de soins et d'abri à un poste de commandement."
+}
