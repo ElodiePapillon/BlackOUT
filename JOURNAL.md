@@ -3,6 +3,19 @@
 Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé, ce qui reste ouvert. Le README demeure le document de référence technique ; le journal n'en trace que l'histoire.
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
+## 2026-08-04 (suite) — Dépôt public : retrait des envois et des destinataires
+
+### Ce qui a été retiré
+
+Le dépôt étant désormais public, tout ce qui relevait des envois et des destinataires sort de la version publiée. Le dossier courriers/ est supprimé avec ses huit fichiers, le mode d'emploi et les sept lettres. diffusion-institutionnelle.md perd le tableau des destinataires, la section sur le contenu des lettres et l'étape d'envoi de sa feuille de route. partager-le-projet.md perd le modèle de courriel à une direction générale des services, et son premier paragraphe acte la bascule de visibilité au lieu d'annoncer un dépôt privé.
+
+### Pourquoi
+
+Un plan d'approche institutionnel qui nomme les services à solliciter, dans un ordre choisi et avec les arguments retenus pour chacun, n'a pas à être lisible par les intéressés avant d'avoir été envoyé. Le travail n'est pas perdu, il n'a simplement plus sa place dans un dépôt ouvert.
+
+### Ce qui reste, et qui suffit
+
+La chaîne de dépôt pérenne et de référencement, et elle seule : passage en public, release v0.1.0, archivage Zenodo et DOI de concept, déclaration à Software Heritage, dépôt sur HAL, puis code.gouv.fr et BlueHats. Les entrées antérieures du journal mentionnent encore les courriers : elles ne sont pas réécrites, un journal se lit dans l'ordre où il a été tenu.
 
 ## 2026-08-04 — Premières démarches de dépôt pérenne
 
