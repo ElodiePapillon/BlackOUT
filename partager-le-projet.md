@@ -79,4 +79,10 @@ Les étoiles ne mesurent rien. Trois signaux valent quelque chose : une communau
 
 ## 7. Ce qui reste à faire
 
-Obtenir l'identifiant pérenne Zenodo, puis vérifier les critères de référencement des plateformes publiques avant de les solliciter. Produire l'export PDF imprimable. Et identifier une première commune volontaire, ce qui vaut mieux que cent partages.
+**Le matériel d'abord.** Commander les deux nœuds retenus dans `materiel-premiers-noeuds.md` : le Seeed Wio Tracker L1 en variante Pro comme balise mobile, le Heltec Mesh Node T114 révision 2.0 comme balise fixe. Cocher la bande 863-870 MHz au moment de la commande, et prévoir les pigtails U.FL vers SMA ainsi qu'une antenne 868 MHz pour le point fixe. Rien d'autre ne se débloque tant que la portée réelle n'a pas été mesurée.
+
+**Mesurer la portée sur le terrain.** Balise fixe au point haut du logement, balise mobile en déplacement, et relevé de la distance utile en conditions réelles, bâti compris. Les résultats se consignent dans le journal, chiffres bruts inclus, y compris quand ils déçoivent.
+
+**Trancher la question du relais solaire.** Avant de commander le SenseCAP Solar Node, demander au support Seeed si le contrôleur de charge coupe la charge des accus en dessous de 0 °C. Ni la documentation Meshtastic ni la fiche produit ne le précisent, et c'est ce point qui décide si un relais peut passer l'hiver dehors sans être abîmé.
+
+**Diffusion.** Obtenir l'identifiant pérenne Zenodo, puis vérifier les critères de référencement des plateformes publiques avant de les solliciter. Produire l'export PDF imprimable. Et identifier une première commune volontaire, ce qui vaut mieux que cent partages.
