@@ -115,6 +115,8 @@ Aucune donnée nominative ni de santé dans ce dépôt, sur la radio ou sur un a
 
 Apache 2.0. Tout est réutilisable, modifiable et redistribuable, y compris par une collectivité, à condition de conserver les mentions de licence et de documenter les modifications. Voir [LICENSE](LICENSE).
 
+**Pourquoi Apache 2.0 et non CC BY 4.0 comme les autres dossiers ?** Parce que ce dépôt contient de la configuration logicielle et des spécifications matérielles : une licence logicielle y est mieux adaptée, et elle offre en outre une protection explicite contre les revendications de brevet.
+
 Les exemples chiffrés dans les grilles d'inventaire sont **fictifs** et doivent tous être remplacés. Les références réglementaires citées doivent être vérifiées dans leur version en vigueur avant tout usage officiel.
 
 ## Contribuer
