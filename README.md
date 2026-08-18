@@ -1,5 +1,8 @@
 # BlackOUT
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21787515.svg)](https://doi.org/10.5281/zenodo.21787515)
+[![Licence](https://img.shields.io/badge/licence-Apache%202.0-lightgrey.svg)](LICENSE)
+
 **Quand il n'y a plus d'électricité, plus de réseau et plus d'Internet, une ville de 20 000 habitants doit encore savoir où est l'eau.**
 
 BlackOUT est un dispositif communal, ouvert et documenté, qui répond à cette question et à celle-là seulement : **où sont les ressources, en quelle quantité, et à quelle heure l'information a été vérifiée.**
