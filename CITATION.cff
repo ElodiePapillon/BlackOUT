@@ -2,9 +2,11 @@ cff-version: 1.2.0
 message: "Si vous réutilisez ou citez ce travail, merci d'utiliser les informations ci-dessous."
 title: "BlackOUT : réseau de communication communal résilient hors infrastructure (LoRa 868 MHz et Meshtastic)"
 type: software
-authors: [{family-names: "Perrichon", given-names: "Elodie", orcid: "https://orcid.org/0009-0001-7032-2991"}]
+authors: [{family-names: "Perrichon", given-names: "Elodie", alias: "ElodiePapillon", orcid: "https://orcid.org/0009-0001-4236-1969"}]
 license: Apache-2.0
+doi: "10.5281/zenodo.21787515"
 repository-code: "https://github.com/ElodiePapillon/BlackOUT"
+url: "https://github.com/ElodiePapillon/BlackOUT"
 version: 0.1.0
 date-released: "2026-08-03"
 keywords: ["résilience territoriale", "gestion de crise", "plan communal de sauvegarde", "sécurité civile", "LoRa", "Meshtastic", "868 MHz", "réseau maillé", "coupure électrique", "basse technologie", "inventaire de ressources"]
