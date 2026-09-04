@@ -55,10 +55,12 @@ ne le croit.
 
 | Poste | Détail | Total |
 |---|---|---|
-| Impression | imprimante laser A3, toner de départ, rame de papier | 400 € |
+| Matériel d'impression | imprimante laser A3, toner de départ, rame de papier | 400 € |
+| Impression des gabarits | 600 affichettes A3 pré-imprimées en reprographie (120 g) | 180 € |
+| Fiches plastifiées de terrain | plastifieuse A3, pochettes, kit feutres effaçables et chiffons | 120 € |
 | Panneaux d'affichage | 10 vitrines extérieures verrouillables, 120 € pièce | 1 200 € |
 | Équipement des référents | chasubles, lampes frontales, carnets de relève | 300 € |
-| **Sous-total** | | **1 900 €** |
+| **Sous-total** | | **2 200 €** |
 
 ## 5. Outillage, rechange et consommables
 
@@ -84,10 +86,10 @@ ne le croit.
 | Poste | Montant |
 |---|---|
 | Les 50 nœuds | 8 750 € |
-| Chaîne d'agrégation et d'affichage | 1 900 € |
+| Chaîne d'agrégation et d'affichage | 2 200 € |
 | Outillage, rechange, consommables | 800 € |
 | Mise en place et exercices, première année | 900 € |
-| **Total investissement** | **12 350 €** |
+| **Total investissement** | **12 650 €** |
 
 L'ordre de grandeur à retenir est **12 000 à 13 000 €** pour un dispositif complet
 couvrant une ville de 20 000 habitants.
@@ -115,8 +117,8 @@ résultat vérifiable avant d'engager le suivant.
 |---|---|---|---|
 | Palier 0 | 2 nœuds de test et l'outillage de mesure | 550 € | 550 € |
 | Palier 1 | 3 relais d'ossature, 1 poste de commandement, 5 points, 2 vitrines | 2 500 € | 3 050 € |
-| Palier 2 | 3 relais, 10 points, 2 liaisons extérieures, second poste, impression | 4 600 € | 7 650 € |
-| Palier 3 | solde des points, mobiles, réserve, formation, exercices | 4 700 € | 12 350 € |
+| Palier 2 | 3 relais, 10 points, 2 liaisons extérieures, second poste, impression et fiches | 4 900 € | 7 950 € |
+| Palier 3 | solde des points, mobiles, réserve, formation, exercices | 4 700 € | 12 650 € |
 
 Le palier 0 coûte moins de 600 € et répond à la seule question qui compte pour la
 suite : quelle portée obtient-on réellement dans cette ville, avec ce matériel. Tant
@@ -126,12 +128,12 @@ que cette réponse n'est pas mesurée, tout le reste du budget est théorique.
 
 | Indicateur | Valeur |
 |---|---|
-| Investissement par habitant, une fois | 0,62 € |
+| Investissement par habitant, une fois | 0,63 € |
 | Fonctionnement par habitant et par an | 0,06 € |
-| Investissement par nœud déployé | 247 € |
-| Investissement par point de ressource desservi | 457 € |
+| Investissement par nœud déployé | 253 € |
+| Investissement par point de ressource desservi | 468 € |
 
-Soixante-deux centimes par habitant, une seule fois. C'est l'ordre de grandeur d'un
+Soixante-trois centimes par habitant, une seule fois.
 panneau de signalisation routière, ou d'une journée de location de nacelle. Le coût
 matériel n'est pas ce qui empêchera ce projet d'exister.
 

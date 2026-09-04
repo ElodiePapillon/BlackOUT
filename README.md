@@ -19,7 +19,7 @@ Cinquante boîtiers radio LoRa autonomes relient les points d'eau, de vivres, de
 | Taille du réseau | 50 nœuds, plafond ferme |
 | Autonomie | solaire pour les relais, plusieurs jours pour les terminaux |
 | Rythme | 3 créneaux par jour, silence radio la nuit |
-| Investissement | environ 12 350 euros, soit **0,62 euro par habitant** |
+| Investissement | environ 12 650 euros, soit **0,63 euro par habitant** |
 | Fonctionnement | environ 1 250 euros par an |
 | Vraie contrainte | 300 heures de mise en place, 120 heures par an, 60 personnes |
 | Licence | Apache 2.0 |
@@ -108,7 +108,7 @@ Radio LoRa 868 MHz pilotée par le firmware Meshtastic, préréglage LONG_FAST, 
 | Enrôlement en présentiel des clés publiques | à faire |
 | Maquette imprimée du tableau A3 | à faire |
 | Premier exercice grandeur nature | à faire |
-| Export imprimable de l'ensemble | notice écrite, script à faire  |
+| Export imprimable de l'ensemble | fait (notice et script `export-pdf.sh`) |
 
 ## Trois règles qui ne se négocient pas
 
