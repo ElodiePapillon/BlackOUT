@@ -35,6 +35,14 @@ FILES=(
   "partager-le-projet.md"
 )
 
+strip_remote_images() {
+  sed -E \
+    -e 's/\[!\[[^]]*\]\((http|https|ftp)[^)]*\)\]\([^)]*\)//g' \
+    -e 's/!\[[^]]*\]\((http|https|ftp)[^)]*\)//g' \
+    -e 's/<img[^>]*src="(http|https|ftp)[^"]*"[^>]*>//g' \
+    "$1"
+}
+
 echo "=== Assemblage du classeur de référence BlackOUT ==="
 
 # Vérification de l'existence des fichiers
@@ -65,7 +73,7 @@ echo "Génération de $OUTPUT_MD..."
 
   for file in "${FILES[@]}"; do
     echo "<!-- Debut de $file -->"
-    cat "$file"
+    strip_remote_images "$file"
     echo ""
     echo -e "\n\n\\pagebreak\n\n"
   done
@@ -89,21 +97,26 @@ if command -v pandoc &>/dev/null; then
     PDF_ENGINE_OPT=(--pdf-engine=typst)
   fi
 
-  pandoc "$OUTPUT_MD" \
+  if pandoc "$OUTPUT_MD" \
     --toc \
     --toc-depth=2 \
     -V fontsize=11pt \
     -V geometry:margin=2cm \
     -V papersize=a4 \
     "${PDF_ENGINE_OPT[@]}" \
-    -o "$OUTPUT_PDF"
-
-  echo "PDF généré avec succès : $OUTPUT_PDF"
+    -o "$OUTPUT_PDF"; then
+    echo "PDF généré avec succès : $OUTPUT_PDF"
+  else
+    echo "Avertissement : Pandoc n'a pas pu produire le PDF." >&2
+    echo "La cause la plus fréquente est un moteur LaTeX absent ou incomplet." >&2
+    echo "(sur Debian/Ubuntu : sudo apt install texlive-xetex texlive-fonts-recommended)" >&2
+    echo "Le Markdown assemblé reste utilisable tel quel." >&2
+  fi
 else
   echo ""
   echo "Note : Pandoc n'est pas installé sur ce système."
   echo "Le fichier Markdown combiné '$OUTPUT_MD' a été généré."
-  echo "Pour produire le PDF ultimate avec Pandoc, installez-le et lancez :"
+  echo "Pour produire le PDF complet avec Pandoc, installez-le et lancez :"
   echo "  pandoc $OUTPUT_MD --toc --toc-depth=2 -V fontsize=11pt -V geometry:margin=2cm -V papersize=a4 -o $OUTPUT_PDF"
 fi
 

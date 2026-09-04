@@ -4,6 +4,10 @@ Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
 
+## 2026-08-05 (session du jour) — Correction de l'export PDF hors ligne
+
+L'export via `export-pdf.sh` échouait sur un poste hors ligne car Pandoc tentait de télécharger les badges distants de zenodo et img.shields.io, et l'option `set -euo pipefail` provoquait l'arrêt inopiné du script. Le script a été modifié pour retirer automatiquement les images et badges distants avant l'assemblage et pour rendre l'échec de Pandoc non fatal. La documentation (`export-imprimable.md`) a été mise à jour en conséquence.
+
 ## 2026-08-04 (session du soir) — Script d'export Pandoc et mise à jour du chiffrage d'impression
 
 ### Script d'export du classeur de référence
