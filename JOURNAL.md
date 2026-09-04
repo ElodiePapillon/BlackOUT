@@ -12,7 +12,7 @@ Le script `export-pdf.sh` a été créé et déposé à la racine du dépôt. Il
 
 ### Prise en compte du coût d'impression et de plastification
 
-Le chiffrage dans `budget.md` a été ajusté pour intégrer le coût d'impression des 600 gabarits A3 (180 €) et l'équipement de plastification des fiches de terrain avec leurs consommables (120 €). L'investissement global révisé s'établit désormais à 12 650 €, soit 0,63 € par habitant, conservant le cadrage initial de 12 000 à 13 000 €.
+Le chiffrage dans `budget.md` a été ajusté pour intégrer le coût d'impression des 600 gabarits A3 (180 €) et l'équipement de plastification des fiches de terrain avec leurs consommables (120 €). L'investissement global révisé s'établit désormais à 12 650 €, soit 0,63 € par habitant, conservant le cadrage initial de 12 000 à 13 000 €. Les mentions résumées du budget dans `partager-le-projet.md` et `ressources/05_humain_et_competences.md` ont également été mises en cohérence avec ce montant.
 
 ### Notice et état d'avancement
 
