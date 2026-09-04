@@ -47,7 +47,7 @@ Un conseil sur l'ordre : commencer par les communautés techniques, qui vont tro
 >
 > BlackOUT est un dispositif communal ouvert qui répond à cette question et à celle-là seulement : 50 nœuds radio LoRa autonomes, trois créneaux de relevé par jour, et un tableau d'affichage papier dans chaque quartier.
 >
-> Ce qu'il y a dans le dépôt : le dimensionnement du maillage, l'authentification des bulletins par clé publique pour qu'un faux message ne puisse pas circuler, la conduite de crise heure par heure, le budget complet à 12 350 euros soit 0,62 euro par habitant, les grilles d'inventaire prêtes à remplir, un scénario d'exercice et dix usages hors crise.
+> Ce qu'il y a dans le dépôt : le dimensionnement du maillage, l'authentification des bulletins par clé publique pour qu'un faux message ne puisse pas circuler, la conduite de crise heure par heure, le budget complet à 12 650 euros soit 0,63 euro par habitant, les grilles d'inventaire prêtes à remplir, un scénario d'exercice et dix usages hors crise.
 >
 > Ce que ce n'est pas : un moyen d'alerte, un réseau de secours, un substitut au 112. C'est de la logistique d'information, rien d'autre.
 >

@@ -3,6 +3,21 @@
 Ce fichier retrace l'avancement du projet : ce qui est fait, ce qui est décidé, ce qui reste ouvert. Le README demeure le document de référence technique ; le journal n'en trace que l'histoire.
 
 Tenue du journal : une entrée à chaque étape franchie, et au minimum une par session de travail. Entrées classées de la plus récente à la plus ancienne.
+
+## 2026-08-04 (session du soir) — Script d'export Pandoc et mise à jour du chiffrage d'impression
+
+### Script d'export du classeur de référence
+
+Le script `export-pdf.sh` a été créé et déposé à la racine du dépôt. Il permet d'assembler automatiquement les 21 documents composant le classeur de référence dans l'ordre défini par `export-imprimable.md`. Le script génère un document Markdown unifié (`blackout-classeur-reference.md`) avec en-têtes, métadonnées et sauts de page, puis tente de produire le fichier PDF complet (`blackout-classeur-reference.pdf`) via Pandoc si celui-ci est installé. En l'absence de Pandoc, le fichier Markdown unifié reste immédiatement exploitable.
+
+### Prise en compte du coût d'impression et de plastification
+
+Le chiffrage dans `budget.md` a été ajusté pour intégrer le coût d'impression des 600 gabarits A3 (180 €) et l'équipement de plastification des fiches de terrain avec leurs consommables (120 €). L'investissement global révisé s'établit désormais à 12 650 €, soit 0,63 € par habitant, conservant le cadrage initial de 12 000 à 13 000 €. Les mentions résumées du budget dans `partager-le-projet.md` et `ressources/05_humain_et_competences.md` ont également été mises en cohérence avec ce montant.
+
+### Notice et état d'avancement
+
+`export-imprimable.md` a été mis à jour pour intégrer le mode d'emploi de `export-pdf.sh` et réviser les éléments restant à trancher. Dans le `README.md`, la ligne de l'export imprimable dans le tableau d'état d'avancement est désormais marquée comme réalisée.
+
 ## 2026-08-04 (suite) — Dépôt public : retrait des envois et des destinataires
 
 ### Ce qui a été retiré

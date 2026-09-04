@@ -1,6 +1,6 @@
 # 05 - Humain et compétences
 
-La ressource la plus rare, et la seule qu'aucun budget ne remplace. Le dispositif suppose une soixantaine de personnes mobilisées, 300 heures de mise en place et 120 heures par an. Le matériel coûte 12 350 euros ; c'est la partie facile.
+La ressource la plus rare, et la seule qu'aucun budget ne remplace. Le dispositif suppose une soixantaine de personnes mobilisées, 300 heures de mise en place et 120 heures par an. Le matériel coûte 12 650 euros ; c'est la partie facile.
 
 > Les valeurs ci-dessous sont **fictives**. Elles montrent le format attendu et doivent toutes être remplacées.
 

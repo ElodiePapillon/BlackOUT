@@ -41,13 +41,18 @@ Ouvrir chaque fichier de la liste ci-dessus dans son affichage rendu sur GitHub,
 
 Le défaut de cette méthode est qu'elle emporte l'interface de GitHub dans la marge et qu'elle produit des tableaux parfois coupés en deux pages. Elle reste acceptable pour le classeur de référence, pas pour les fiches de terrain.
 
-## 4. Méthode propre, avec Pandoc
+## 4. Méthode propre, avec le script d'export Pandoc
 
 Pandoc convertit du Markdown en PDF sans interface parasite, respecte les tableaux et génère une table des matières. Il est libre, disponible sur les trois systèmes, et ne demande pas de droits particuliers sur un poste de mairie une fois installé.
 
-La commande à retenir, exécutée à la racine du dépôt cloné, enchaîne les fichiers dans l'ordre du tableau de la section 2 et produit un seul PDF paginé avec sommaire. Le principe est d'énumérer les fichiers dans l'ordre voulu, de demander une table des matières à deux niveaux, une taille de police de 11 points, un format A4, et un titre de document explicite portant la date d'export. La date dans le titre est ce qui permet, six mois plus tard, de savoir si le classeur posé sur l'étagère est encore à jour.
+Un script d'export est fourni à la racine du dépôt : `export-pdf.sh`. Rendus exécutable (`chmod +x export-pdf.sh`), il enchaîne automatiquement les 21 fichiers dans l'ordre du tableau de la section 2, génère un document combiné `blackout-classeur-reference.md` avec en-têtes et saut de page par document, puis tente de produire `blackout-classeur-reference.pdf` via Pandoc s'il est installé.
 
-Un script d'export est à écrire et à déposer dans le dépôt. Il n'existe pas encore : c'est une tâche ouverte, inscrite au journal. Tant qu'il n'existe pas, la méthode de la section 3 fait le travail.
+Pour lancer l'export :
+```bash
+./export-pdf.sh
+```
+
+Si Pandoc n'est pas installé sur la machine d'export, le script produit le fichier Markdown unifié `blackout-classeur-reference.md` et indique la commande Pandoc à exécuter une fois l'outil installé.
 
 ## 5. Les fiches de terrain à plastifier
 
@@ -78,4 +83,4 @@ Les clés de canal et les clés privées des nœuds ne sont jamais imprimées da
 
 ## 8. À trancher
 
-Qui détient les trois exemplaires du classeur et qui est responsable de leur retrait quand ils sont périmés. Le budget d'impression et de plastification, qui n'est pas encore chiffré dans budget.md. L'écriture du script d'export Pandoc, aujourd'hui absente du dépôt. Le choix du prestataire d'impression pour les 600 A3, qui conditionne le délai avant le premier exercice.
+Qui détient les trois exemplaires du classeur et qui est responsable de leur retrait quand ils sont périmés. Le choix du prestataire d'impression pour les 600 A3 (chiffré à 180 € dans `budget.md`), qui conditionne le délai avant le premier exercice.
