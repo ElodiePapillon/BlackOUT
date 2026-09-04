@@ -52,7 +52,7 @@ Pour lancer l'export :
 ./export-pdf.sh
 ```
 
-Si Pandoc n'est pas installé sur la machine d'export, le script produit le fichier Markdown unifié `blackout-classeur-reference.md` et indique la commande Pandoc à exécuter une fois l'outil installé.
+Si Pandoc n'est pas installé sur la machine d'export, le script produit le fichier Markdown unifié `blackout-classeur-reference.md` et indique la commande Pandoc à exécuter une fois l'outil installé. Les badges et images distants sont retirés automatiquement lors de l'assemblage, afin que l'export fonctionne sur une machine sans accès réseau.
 
 ## 5. Les fiches de terrain à plastifier
 
